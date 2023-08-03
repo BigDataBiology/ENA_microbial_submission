@@ -1,0 +1,4 @@
+alias	isolation_source	collection date	geographic location (country and/or sea) 	host health state	host scientific name	title	taxon_id	center_name	isolate	emm_type	ST
+strain1	Blood	2023	Country	diseased	Homo sapiens	Study title	1314	Research Institute X	strain1	3	15
+strain2	Blood	2023	Country	healthy	Homo sapiens	Study title	1314	Research Institute X	strain2	1	28
+strain3	Blood	2023	Country	not provided	Homo sapiens	Study title	1314	Research Institute X	strain3	3	15

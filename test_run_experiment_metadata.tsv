@@ -1,0 +1,4 @@
+alias	sample	ENA_accession	title	library_strategy	library_source	library_selection	platform	instrument_model	library_layout	nominal_length	center_name
+strain1	SAMEA12362330	ERS9969124	Streptococcus pyogenes sequencing	WGS	GENOMIC	RANDOM	Illumina	NextSeq 500	Paired	500	Research Institute X
+strain2	SAMEA12362331	ERS9969125	Streptococcus pyogenes sequencing	WGS	GENOMIC	RANDOM	Illumina	NextSeq 500	Paired	500	Research Institute X
+strain3	SAMEA12362332	ERS9969126	Streptococcus pyogenes sequencing	WGS	GENOMIC	RANDOM	Illumina	NextSeq 500	Paired	500	Research Institute X
