@@ -4,11 +4,11 @@ We suggest that you start by reading the [General Guide On ENA Data Submission](
 
 ## Register Study
 
-Start by going through the [Register a Study Interactively](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html). We find it easier to register a new Study interactively, especially when the raw reads we want to submit will become associated with a single Study, but you can find instructions to do this programmatically on the [Register a Study Programmatically](https://ena-docs.readthedocs.io/en/latest/submit/study/programmatic.html) section.
+Start by going through the [Register a Study Interactively](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html). We find it easier to register a new Study interactively, especially when the raw reads we want to submit will become associated with a single Study, but you can find instructions to do this programmatically on the [Register a Study Programmatically](https://ena-docs.readthedocs.io/en/latest/submit/study/programmatic.html) section. We suggest that you define a release date well beyond the present date to avoid making the study publicly available when you still need to edit it. Do not forget to download the file with the BioProject and the Study accession numbers.
 
 ## Register Samples
 
-The next step is to register your samples. You can find information about this step on the [How to Register Samples](https://ena-docs.readthedocs.io/en/latest/submit/samples.html) and [Register Samples Programmatically](https://ena-docs.readthedocs.io/en/latest/submit/samples/programmatic.html) sections. We will use the ERC000028 checklist (ENA prokaryotic pathogen minimal sample checklist, available [here](https://www.ebi.ac.uk/ena/browser/view/ERC000028)). We will be constructing the XML based on the fields in the checklist (we will not modify the checklist file for submission). This repo includes a TSV file, `test_metadata.tsv`, with example metadata necessary to register samples in the ENA. To create the XML file to register your samples you should run the `ena_samples_xml.py` script. Adapt the following command:
+The next step is to register your samples. You can find information about this step on the [How to Register Samples](https://ena-docs.readthedocs.io/en/latest/submit/samples.html) and [Register Samples Programmatically](https://ena-docs.readthedocs.io/en/latest/submit/samples/programmatic.html) sections. We will use the ERC000028 checklist (ENA prokaryotic pathogen minimal sample checklist, available [here](https://www.ebi.ac.uk/ena/browser/view/ERC000028)). We will be constructing the XML based on the fields in the checklist (we will not modify the checklist file for submission). This repo includes a TSV file, `test_sample_metadata.tsv`, with example metadata necessary to create the XML file used to register samples in the ENA. To create the XML file based on your sample metadata, run the `ena_samples_xml.py` script. Adapt the following command:
 
 ```
 python ena_samples_xml.py -i test_sample_metadata.tsv -o sample.xml -c ERC000028
@@ -37,7 +37,7 @@ To upload read files:
 
 ## Register Runs and Experiments
 
-You need to create a TSV file with the data necessary to register the Runs and Experiments. To create the XML file to register your Runs and Experiments you should run the `ena_reads.xml.py` script. Adapt the following command:
+You need to create a TSV file with the data necessary to register the Runs and Experiments. This repo includes a TSV file, `test_run_experiment_metadata.tsv`, with example metadata necessary to create the XML file used to register runs and experiments in the ENA. To create the XML file to register your Runs and Experiments you should run the `ena_reads.xml.py` script. Adapt the following command:
 
 ```
 python ena_reads.xml.py -i test_run_experiment_metadata.tsv -o datasetID --study studyID --reads readsDir
