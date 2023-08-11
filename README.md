@@ -11,7 +11,7 @@ Start by reviewing the [Register a Study Interactively](https://ena-docs.readthe
 The next step is to register your samples. You can find information about this step on the [How to Register Samples](https://ena-docs.readthedocs.io/en/latest/submit/samples.html) and [Register Samples Programmatically](https://ena-docs.readthedocs.io/en/latest/submit/samples/programmatic.html) sections. We will use the ERC000028 checklist (ENA prokaryotic pathogen minimal sample checklist, available [here](https://www.ebi.ac.uk/ena/browser/view/ERC000028)). We will be constructing the XML based on the fields in the checklist (we will not modify the checklist file for submission). This repo includes a TSV file, `test_sample_metadata.tsv`, with example metadata necessary to create the XML file to register samples in the ENA. You can leave the `center_name` field empty. The center name is automatically assigned from submission account details, and any value that you include in the metadata will be ignored (more information about this [here](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/programmatic.html#identifying-submitters). To create the XML file based on your sample metadata, run the `ena_samples_xml.py` script. Adapt the following command:
 
 ```
-python ena_samples_xml.py -i test_sample_metadata.tsv -o sample.xml -c ERC000028
+python generate_sample_xml.py -i test_sample_metadata.tsv -o sample.xml -c ERC000028
 ```
 
 This will create an XML file with the data to register the samples and the accompanying submission XML file, `submission.xml`.
@@ -41,7 +41,7 @@ This will upload the read files to your private Webin file upload area using FTP
 You must create a TSV file with the data necessary to register the Runs and Experiments. This repo includes a TSV file, `test_run_experiment_metadata.tsv`, with example metadata required to create the XML file to register Runs and Experiments in the ENA. To create the XML file to register your Runs and Experiments, you should run the `ena_reads.xml.py` script. Adapt the following command:
 
 ```
-python ena_reads.xml.py -i test_run_experiment_metadata.tsv -o studyID --study studyID --reads readsDirectory
+python generate_run_experiment_xml.py -i test_run_experiment_metadata.tsv -o studyID --study studyID --reads readsDirectory
 ```
 
 The `studyID` is the BioProject accession number attributed when registering the Study.
