@@ -4,7 +4,7 @@ We suggest you start by reading the [General Guide On ENA Data Submission](https
 
 ## Register Study
 
-Start by reviewing the [Register a Study Interactively](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html) section. We find it easier to register a new Study interactively, especially when the raw reads we want to submit will become associated with a single Study, but you can find instructions to do this programmatically on the [Register a Study Programmatically](https://ena-docs.readthedocs.io/en/latest/submit/study/programmatic.html) section. We suggest you define a release date well beyond the present date to avoid making the Study publicly available when you still need to edit it. You can change the release date when everything is ready. Do not forget to save the BioProject (starts with `PRJEB`) and Study (begins with `ER`) accession numbers.
+Start by reviewing the [Register a Study Interactively](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html) section. We find it easier to register a new Study interactively, especially when the raw reads we want to submit will become associated with a single Study, but you can find instructions to do this programmatically on the [Register a Study Programmatically](https://ena-docs.readthedocs.io/en/latest/submit/study/programmatic.html) section. We suggest you define a release date well beyond the present date to avoid making the Study publicly available when you still need to edit it. You can change the release date when everything is ready. Do not forget to save the BioProject (begins with `PRJEB`) and Study (begins with `ER`) accession numbers.
 
 ## Register Samples
 
