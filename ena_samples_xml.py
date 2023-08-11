@@ -109,7 +109,7 @@ def parse_arguments():
 
     parser.add_argument('-o', '--output-file', type=str, required=True,
                         dest='output_file',
-                        help='Path to to the output XML file (please include the .xml extension.)')
+                        help='Path to the output XML file (please include the .xml extension.)')
 
     parser.add_argument('-c', '--checklist', type=str, required=True,
                         dest='checklist',
