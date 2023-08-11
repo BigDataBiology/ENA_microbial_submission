@@ -1,4 +1,3 @@
 alias	sample	ENA_accession	title	library_strategy	library_source	library_selection	platform	instrument_model	library_layout	nominal_length	center_name
-strain1	SAMEA12362330	ERS9969124	Streptococcus pyogenes sequencing	WGS	GENOMIC	RANDOM	Illumina	NextSeq 500	Paired	500	Research Institute X
-strain2	SAMEA12362331	ERS9969125	Streptococcus pyogenes sequencing	WGS	GENOMIC	RANDOM	Illumina	NextSeq 500	Paired	500	Research Institute X
-strain3	SAMEA12362332	ERS9969126	Streptococcus pyogenes sequencing	WGS	GENOMIC	RANDOM	Illumina	NextSeq 500	Paired	500	Research Institute X
+SH23707A	SAMEA114250714	ERS16238262	Streptococcus pyogenes sequencing	WGS	GENOMIC	RANDOM	Illumina	NextSeq 2000	Paired	150	Instituto de Microbiologia, Faculdade de Medicina, Universidade de Lisboa
+SH23214A	SAMEA114250715	ERS16238263	Streptococcus pyogenes sequencing	WGS	GENOMIC	RANDOM	Illumina	NextSeq 550	Paired	150	Instituto de Microbiologia, Faculdade de Medicina, Universidade de Lisboa
