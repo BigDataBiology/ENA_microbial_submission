@@ -25,7 +25,7 @@ Remember to save the response to a file (copy what is printed to the terminal or
 
 ## Prepare and Upload Read Files
 
-The FASTQ files must be compressed using gzip or bzip2 (check the section about [Preparing A File For Upload](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/preparation.html#preparing-a-file-for-upload)). The `ena_reads.xml.py` script determines the checksums and creates the XML file to register your Runs and Experiments. In this step, you only need to make sure that your files are compressed and that the filenames are in the format `<SAMPLE_ALIAS>_{1,2}.fastq.gz` (The `SAMPLE_ALIAS` is the value used as `alias` in the TSV file with the sample metadata).
+The FASTQ files must be compressed using gzip or bzip2 (check the section about [Preparing A File For Upload](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/preparation.html#preparing-a-file-for-upload)). The `generate_run_experiment_xml.py` script determines the checksums and creates the XML file to register your Runs and Experiments. In this step, you only need to make sure that your files are compressed and that the filenames are in the format `<SAMPLE_ALIAS>_{1,2}.fastq.gz` (The `SAMPLE_ALIAS` is the value used as `alias` in the TSV file with the sample metadata).
 To upload read files:
 
 1. Open a terminal and type `lftp webin2.ebi.ac.uk -u Webin-xxxxx`, filling in your Webin username (must have `lftp` installed).
@@ -38,7 +38,7 @@ This will upload the read files to your private Webin file upload area using FTP
 
 ## Register Runs and Experiments
 
-You must create a TSV file with the data necessary to register the Runs and Experiments. This repo includes a TSV file, `test_run_experiment_metadata.tsv`, with example metadata required to create the XML file to register Runs and Experiments in the ENA. To create the XML file to register your Runs and Experiments, you should run the `ena_reads.xml.py` script. Adapt the following command:
+You must create a TSV file with the data necessary to register the Runs and Experiments. This repo includes a TSV file, `test_run_experiment_metadata.tsv`, with example metadata required to create the XML file to register Runs and Experiments in the ENA. To create the XML file to register your Runs and Experiments, you should run the `generate_run_experiment_xml.py` script. Adapt the following command:
 
 ```
 python generate_run_experiment_xml.py -i test_run_experiment_metadata.tsv -o studyID --study studyID --reads readsDirectory
