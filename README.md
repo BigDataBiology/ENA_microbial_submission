@@ -34,6 +34,8 @@ To upload read files:
 4. Upload files using the `mput <filename>` command.
 5. Use the `bye` command to exit the FTP client.
 
+If the `ls` command gets stuck at `Making data connection...`, try to connect to the server through `ftp` with the following command: `ftp -i Webin-xxxxx@webin2.ebi.ac.uk`.
+
 This will upload the read files to your private Webin file upload area using FTP. After registering the Runs and Experiments, the server automatically links the files to the Run and Experiment records.
 
 ## Register Runs and Experiments
